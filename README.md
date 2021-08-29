@@ -1,5 +1,10 @@
-# Getting Started with Create React App
+# Shaders with Create React App
 
+```
+yarn add three @react-three/fiber @react-three/drei glslify babel-plugin-glsl glsl-noise
+```
+
+---
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
