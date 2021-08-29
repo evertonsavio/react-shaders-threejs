@@ -1,9 +1,21 @@
 import React from 'react';
+import { shaderMaterial } from '@react-three/drei';
+import glsl from 'babel-plugin-glsl/macro';
+//const glsl = require('babel-plugin-glsl/macro');
 import {Canvas} from '@react-three/fiber';
 
 import './App.css';
 
-const Scene:React.FC = () => {
+const WaveShaderMaterial = shaderMaterial(
+  //Uniform
+  {},
+  //Vertex
+  glsl``,
+  //Fragment Shader
+  glsl``
+)
+
+const Scene = () => {
   return(
     <Canvas>
       <pointLight position={[10,10,10]} />
@@ -15,7 +27,7 @@ const Scene:React.FC = () => {
   )
 }
 
-const App:React.FC = () => {
+const App = () => {
   return (
     <Scene />
   )
